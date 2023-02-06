@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пошук автомобіля</title>
+</head>
+<body>
+<h2>Пошук автомобіля</h2>
+<form>
+    <table border="0" cellpadding="6">
+        <tr>
+            <td>
+                <input type="checkbox" name="subject" value="all"> Всі
+                <input type="checkbox" name="subject" value="b/u"> Б/У
+                <input type="checkbox" name="subject" value="new"> Нові
+                <input type="checkbox" name="subject" value="no"> Нерозмитнена
+            </td>
+        </tr>
+        <tr>
+            <td>Тип кузова:
+                <select>
+                    <option value="car">Легкові</option>
+                    <option value="autobus">Автобуси</option>
+                    <option value="trucks">Вантажівки</option>
+                    <option value="special">Спецтехніка</option>
+                </select>
+            </td>
+            <td>Країна:
+                <select>
+                    <option value="germany">Германія</option>
+                    <option value="japan">Японія</option>
+                    <option value="sweden">Швеція</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Марка:
+                <select>
+                    <option value="mercedes">Mercedes-Benz</option>
+                    <option value="vw">Volkswagen</option>
+                    <option value="audi">Audi</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="volvo">Volvo</option>
+                </select>
+            </td>
+            <td>Рік випуску: <br>
+                Від:
+                <select>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+                До:
+                <select>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Модель:
+                <select>
+                    <optgroup label="Mercedes-Benz">
+                        <option value="eKlass">E-Class</option>
+                    </optgroup>
+                    <optgroup label="Volkswagen">
+                        <option value="golf">Golf</option>
+                    </optgroup>
+                    <optgroup label="Audi">
+                        <option value="">Q8</option>
+                    </optgroup>
+                    <optgroup label="Nissan">
+                        <option value="">350Z</option>
+                    </optgroup>
+                    <optgroup label="Volvo">
+                        <option value="">V90</option>
+                    </optgroup>
+                </select>
+            </td>
+            <td>Ціна: <br>
+                <input type="text" placeholder="Від"><br>
+                <input type="text" placeholder="До">
+            </td>
+        </tr>
+        <tr>
+
+            <td>Тип палива: <br>
+                <input type="checkbox" name="disel">Дізель<br>
+                <input type="checkbox" name="gas">Газ<br>
+                <input type="checkbox" name="bensin">Бензин<br>
+                <input type="checkbox" name="electrik">Електрика<br>
+            </td>
+            <td>КПП: <br>
+                <input type="checkbox" name="auto">Автоматичка <br>
+                <input type="checkbox" name="ruc">Ручна
+            </td>
+        </tr>
+        <tr>
+            <td>Колір:
+                <select name="color">
+                    <option>Червоний</option>
+                    <option>Чорний</option>
+                    <option>Зелений</option>
+                    <option>Білий</option>
+                </select>
+            </td>
+            <td>Комфорт: <br>
+                <input type="checkbox"> Кондиціонер <br>
+                <input type="checkbox"> Підсилювач керма <br>
+                <input type="checkbox"> Люк
+                <input type="checkbox"> Підігрів сидінь
+            </td>
+        </tr>
+    </table>
+    <br>
+    <input type="button" value="Пошук" style="width: 90px; height:25px;">
+</form>
+</body>
+</html>
