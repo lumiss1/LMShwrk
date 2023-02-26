@@ -1,393 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.fontRoboto {
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
 .title {
-    display: flex;
-    justify-content: center;
+    background: #E5E5E5;
 }
 
 .title ul {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #333333;
-
+    display: flex;
+    justify-content: center;
 }
 
 .title li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
+    padding: 17px 30px;
 }
 
-.logo {
-    margin-left: 250px;
-    margin-right: 250px;
-    display: flex;
-}
-
-.image {
-    margin-top: 15px;
-    height: 1%;
-}
-
-.beauty {
-    font-family: 'Roboto';
-    font-style: normal;
+.img span {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.1em;
     color: #F13C6E;
     text-transform: uppercase;
-
 }
 
-.num {
-    font-family: 'Roboto';
-    font-style: normal;
+.number {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
-    align-self: baseline;
-    margin-right: 40px;
-    margin-top: 50px;
 }
 
-.logo input {
-    border: 2px solid #F13C6E;
-    border-radius: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
+.buttCall {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     color: #000000;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 35px;
+
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    background: none;
+    padding: 10px 50px;
 }
 
-.menu {
+.logo {
     display: flex;
-    margin-bottom: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 40px 0px;
 }
 
-.menu ul {
-    font-family: 'Roboto';
-    font-style: normal;
+.img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.main_menu {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    padding: 30px 0px;
+    border-top: 1px solid #EFEFEF;
 }
 
-.menu li {
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 25px;
+.main_menu ul {
+    display: flex;
+    justify-content: center;
 }
 
-.s {
-    font-family: 'Roboto';
-    font-style: normal;
+.main_menu li {
+    padding: 0px 30px;
+}
+
+.sale {
+    background-image: url("./gallery/Rectangle 2.jpg");
+    width: 1903px;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 0px 15%;
+}
+
+
+.superchair {
     font-weight: 700;
     font-size: 48px;
     line-height: 56px;
     color: #FFFFFF;
-
-    position: absolute;
-    width: 308px;
-    height: 44px;
-    left: 420px;
-    top: 441px;
+    padding: 20px 0px;
 }
 
-.the {
-    font-family: 'Roboto';
-    font-style: normal;
+.text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
-    position: absolute;
-    width: 308px;
-    height: 35px;
-    left: 420px;
-    top: 570px;
-
+    width: 255px;
+    padding: 20px 0px;
 }
 
-.but2 {
+.buttMore {
+    background: #F13C6E;
     border: 2px solid #FFFFFF;
     border-radius: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     letter-spacing: 0.05em;
-    background: #F13C6E;
     color: #FFFFFF;
-    position: absolute;
-    width: 170px;
-    height: 40px;
-    left: 420px;
-    top: 665px;
+    padding: 10px 70px;
 }
 
-.special {
+.all {
+    background: #E5E5E5;
+    padding: 10px 5%;
+}
+
+.title1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding: 15px 8%;
+}
+
+.special_off ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0px;
+}
+
+.chairBox {
+    background: #FFFFFF;
     display: flex;
     justify-content: space-around;
-    margin-left: 350px;
-    margin-right: 250px;
-
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
 }
 
-.special ul {
-    list-style-type: none;
-}
-
-.image1 {
-    text-align: center;
-    margin-bottom: 20px;
-
-}
-
-.hair {
-    font-family: 'Roboto';
-    font-style: normal;
+.special_span {
+    margin: 10px 0px;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     text-align: center;
-    margin-bottom: 20px;
     color: #333333;
+    width: 80%;
+}
+
+.buttBuy {
+    background: #F13C6E;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 10px 40px;
+    border: #F13C6E;
 }
 
 .price {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     text-align: center;
     letter-spacing: 0.05em;
-    margin-bottom: 20px;
     color: #000000;
+    margin: 10px;
 }
 
-.but3 {
-    border: 2px solid #FFFFFF;
-    border-radius: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    background: #F13C6E;
-    color: #FFFFFF;
-    padding: 10px 55px 10px 55px;
-}
-
-.cent {
-    text-align: center;
-}
-
-.off {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    margin-left: 410px;
-    color: #000000;
-    margin-bottom: 40px;
-    margin-top: 5%;
-}
-
-.bt {
-    font-family: 'Roboto';
-    font-style: normal;
+.text_big {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
     color: #FFFFFF;
-    margin-left: 40px;
-    margin-top: 35px;
+    padding: 20px 0px;
 }
 
-.st {
-    font-family: 'Roboto';
-    font-style: normal;
+.text_small {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
-    margin-left: 40px;
-    margin-top: 25px;
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.gift {
+    background: #F13C6E;
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+    width: 460px;
+}
+
+.store_map {
+    background: #F13C6E;
+    display: flex;
+    padding: 20px 40px;
+    gap: 20px;
+    width: 460px;
+}
+
+.subscribe {
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 .email {
     border: 2px solid #FFFFFF;
     border-radius: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    margin-left: 40px;
-    margin-top: 15px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.gift img {
-    margin-left: 335px;
-    float: right;
-    margin: 52px 60px 7px 0;
+    color: #C4C4C4;
+    padding: 10px 0px 10px 10px;
 
 }
 
-.gift {
-    border: solid #F13C6E;
-    margin-left: 415px;
-    width: 540px;
-    height: 212px;
-    background: #F13C6E;
-    margin-top: 125px;
-
-}
-
-.gift1 {
-    border: solid #F13C6E;
-    margin-left: 100px;
-    width: 540px;
-    height: 212px;
-    background: #F13C6E;
-    margin-top: 125px;
-
-}
-
-.gift1 img {
-    margin-left: 335px;
-    float: right;
-    margin: 52px 60px 7px 0;
-
-}
-
-.store {
+.buttStore {
     background: #F13C6E;
     border: 2px solid #FFFFFF;
     border-radius: 30px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     color: #FFFFFF;
-    margin-left: 40px;
-    margin-top: 15px;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 20px;
+    width: 180px;
 }
 
-.back {
+.gift_text {
     display: flex;
+    flex-direction: column;
 }
 
-.impulse-box {
+.sms {
+    padding: 30px 0px 30px 30px;
+}
+
+.car {
+    padding: 30px 0px 30px 30px;
+}
+
+.impulse_box {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.impulse_list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 0px 20px 0px;
-    margin: 100px 420px 100px 420px;
+    width: 65%;
+    justify-content: center;
 }
 
-.popular {
-    font-family: 'Roboto';
-    font-style: normal;
+.impulse {
+    background-color: #FFFFFF;
+    padding: 35px 60px;
+    border: 1px solid #EFEFEF;
+}
+
+.btext {
     font-weight: 500;
     font-size: 16px;
     line-height: 140.62%;
-    margin: 100px 0px 40px 0px;
     color: #000000;
+    width: 80%;
+    border-bottom: 1px solid #EFEFEF;
+    padding: 20px 0px;
+    width: 200%;
 }
 
-.footers {
-    font-family: 'Roboto';
-    font-style: normal;
+.popular_categories {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0px;
+    gap: 10%;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.menu {
     font-weight: 400;
     font-size: 12px;
     line-height: 28px;
     color: #828282;
-    list-style-type: none;
+    padding: 20px 0px;
 }
 
-.menu2 {
+.social_media {
     display: flex;
-    justify-content: space-around;
-    margin: 0px 285px 0px 285px;
+    justify-content: space-between;
+    padding: 30px 15%;
 }
 
-.low-title {
-    margin: 60px 385px 0px 420px;
-    display: flex;
-
+.link_social img {
+    padding: 0px 10px;
 }
 
-.low-title img {
-    padding: 0px 10px 0px 10px;
-    height: 1%;
-}
-
-.low-title p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    align-self: baseline;
-    margin-right: 40px;
-}
-
-.low-title input {
-    border: 2px solid #F13C6E;
-    border-radius: 40px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #000000;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.last {
-    margin: 45px 385px 0px 420px;
-    display: flex;
-
-}
-
-.last p {
-    font-family: 'Roboto';
-    font-style: normal;
+.finish {
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     color: #828282;
-}
-
-.right {
-    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background-color: #EFEFEF;
 }
