@@ -633,7 +633,7 @@
     }
 
     &__logo-pic {
-      width: 5%;
+      width: 8%;
       padding: 5px 0;
     }
   }
@@ -641,21 +641,58 @@
 
 .slide6 {
   display: flex;
-  padding: 5%;
+  padding: 5% 10%;
   background: #DABC98;
+  justify-content: space-around;
 
   .cake {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-right: 1px solid;
+
     &__soft {
       font-weight: 600;
       font-size: 35px;
       line-height: 50px;
       color: #000000;
+      width: 50%;
     }
   }
 
   .rated {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+
+    &__ul {
+      display: flex;
+      gap: 20%;
+      align-items: center;
+    }
+
+    &__logo, &__star {
+      padding: 10px 0;
+    }
+
+    &__star {
+      max-height: 100%;
+      max-width: 100%;
+    }
+
+    &__li {
+      display: flex;
+      flex-direction: column;
+      gap: 5%;
+      align-items: baseline;
+    }
+
+    &__users {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: 0.75px;
+      color: #000000;
+    }
   }
 }
 
@@ -739,5 +776,103 @@
     color: #FFFFFF;
     width: 10%;
     margin: 30px auto;
+  }
+}
+
+
+.menu_ul {
+  display: flex;
+  padding: 4% 5%;
+  border-bottom: 1px solid black;
+  gap: 5%;
+
+  .case {
+    &__studies {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 50px;
+      color: #000000;
+      padding: 30px 0;
+    }
+
+    &__logo_pic {
+      width: 15%;
+      padding: 10px 0;
+    }
+
+    &__bike_pic {
+      width: 45%;
+      padding: 10px 0;
+    }
+
+    &__ul {
+      @include flex();
+    }
+
+    &__riding {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+      padding: 20px 0;
+      width: 50%;
+    }
+
+    &__read {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000000;
+    }
+  }
+
+  .product {
+    &__pr {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      padding: 30px 0;
+    }
+
+    &__list {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 15px;
+      color: #000000;
+      padding: 5px 0;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 5%;
+
+
+  .lokalise {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &__local {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+      width: 50%;
+    }
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    &__all {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #000000;
+    }
   }
 }
