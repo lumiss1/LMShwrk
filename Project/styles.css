@@ -13,51 +13,79 @@
   font-family: "Roboto Slab", serif;
 }
 
-.image {
-  background-image: url("gallery/photo.png");
-  width: 1903px;
-  height: 964px;
+.background1 {
+  background: no-repeat url("gallery/background.png");
+  background-size: 100%;
 }
-.image .head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 5%;
-  background: rgba(0, 0, 0, 0.85);
-}
-.image .head .company__lets {
+
+.name {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
-  color: #ffffff;
+  color: #fff;
 }
-.image .head .menu__ul {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-}
-.image .head .menu__li {
+
+.block {
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  color: #FFFFFF;
+  color: #fff;
 }
-.image .head .icon__social {
-  padding: 0px 20px;
+
+.social {
+  fill: #fff;
 }
-.image .time {
-  text-align: center;
-  padding: 10%;
+
+.head {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
   background: rgba(0, 0, 0, 0.85);
+  padding: 30px 0;
 }
-.image .time__h1 {
+.head__block, .head__social {
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+  gap: 40px;
+}
+.head__block-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+  background: #1ED500;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.85);
+  margin: 10% 15% 0 15%;
+  position: relative;
+}
+.content .container__title, .content .container__subtitle {
+  color: #fff;
+}
+.content .container__title {
   font-family: "Lora";
   font-style: normal;
   font-weight: 700;
@@ -65,32 +93,231 @@
   line-height: 100px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 20px 0;
 }
-.image .time__span {
+.content .container__subtitle {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
-  color: #FFFFFF;
-  padding: 20px 0;
+  padding: 30px 0;
 }
-.image .time__but {
+.content .container__btn {
+  padding: 20px 100px;
   font-family: "Lato";
   font-style: normal;
   font-weight: 900;
   font-size: 16px;
   line-height: 19px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background: #1ED500;
-  width: 20%;
+}
+.content .plane {
+  padding: 80px 0;
+}
+
+.maintitle {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 74px;
   text-align: center;
-  margin: auto;
-  padding: 25px 40px;
-  border: none;
+  text-transform: uppercase;
+}
+
+.mainsubtitle {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+}
+
+.text {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 190px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.background2, .background4 {
+  background: #E5E5E5;
+  padding: 5%;
+}
+
+.background3 {
+  background: no-repeat url("gallery/background3.png");
+  background-size: 100%;
+}
+
+.nearest {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 65px;
+}
+.nearest__title, .nearest__country-name, .nearest__date, .nearest__discount, .nearest__btn, .nearest__about-country {
+  color: #fff;
+}
+.nearest__date, .nearest__about-country, .nearest__discount, .nearest__btn {
+  font-family: "Quicksand";
+  font-style: normal;
+  padding: 20px 40px;
+}
+.nearest__about-country {
+  width: 60%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+}
+.nearest__date {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.nearest__discount {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  border-top: 3px solid #fff;
+  width: 30%;
+}
+.nearest__btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+}
+
+.popular {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.popular__titles, .popular__inst {
+  color: #333333;
+}
+.popular__titles, .popular__inst, .popular__block-img, .popular__btn {
+  padding: 20px 40px;
+}
+.popular__block-img {
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+  gap: 40px;
+}
+.popular__btn {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: none;
+}
+
+.topcount {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 5px;
+}
+
+.namepopular {
+  display: flex;
+}
+.namepopular__prague {
+  position: relative;
+  top: -19.5em;
+  left: -25em;
+}
+.namepopular__port {
+  position: relative;
+  top: -19.5em;
+  left: -10em;
+}
+.namepopular__dubai {
+  position: relative;
+  top: -19.5em;
+  left: 6.2em;
+}
+
+.background5 {
+  background: rgba(30, 212, 0, 0.4) no-repeat url("gallery/background5.png");
+  background-size: 100%;
+  padding: 20px 5%;
+}
+
+.sec-name {
+  color: #fff;
+  padding: 15px 0;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 5px;
+}
+
+.stories {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.stories__thai {
+  position: relative;
+  top: 100px;
+  left: 5px;
+}
+.stories__story {
+  position: relative;
+  top: 75px;
+  left: -150px;
+}
+.stories__aurora {
+  position: relative;
+  top: 100px;
+  left: -265px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 200px;
+  position: relative;
+  top: 185px;
 }
 
 /*# sourceMappingURL=styles.css.map */
