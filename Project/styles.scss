@@ -62,9 +62,6 @@ $green: #1ED500;
   line-height: 26px;
 }
 
-svg{
-  fill: black;
-}
 
 .head {
   display: flex;
@@ -397,7 +394,7 @@ svg{
 .play {
   @include flex(flex, center, row);
   justify-content: space-around;
-  gap: 300px;
+  gap: 200px;
   position: relative;
   top: 185px;
 }
