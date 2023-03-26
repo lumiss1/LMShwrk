@@ -170,6 +170,62 @@ $green: #1ED500;
   padding: 5%;
 }
 
+.about{
+&__title, &__subtitle1{
+  color: $gray;
+  padding: 25px 0;
+}
+  .start-about {
+    @include flex(flex, center, column)
+  }
+  &__subtitle1 {
+    width: 61%;
+    display: flex;
+  }
+  .progress{
+    @include flex(flex, center, row);
+    justify-content: space-between;
+    color: $green;
+  }
+  .svg-photo{
+    @include flex(flex, center, row);
+    justify-content: space-between;
+  }
+}
+.stats{
+  ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__name{
+    @include quick();
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 32px;
+    text-align: center;
+    color: $gray;
+    width: 148%;
+  }
+  &__num{
+    color: $green;
+  }
+  &__elem{
+    @include flex(flex, center, column);
+    width: 20%;
+  }
+  &__qwe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -96px;
+  }
+}
+
+
+
+
+
 .background3 {
   background: no-repeat url("gallery/background3.png");
   background-size: 100%;
