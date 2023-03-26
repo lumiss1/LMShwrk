@@ -53,7 +53,6 @@ $green: #1ED500;
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
-  color: $white;
 }
 
 .block {
@@ -61,11 +60,10 @@ $green: #1ED500;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  color: $white;
 }
 
-.social {
-  fill: $white;
+svg{
+  fill: black;
 }
 
 .head {
@@ -73,6 +71,10 @@ $green: #1ED500;
   justify-content: space-around;
   background: rgba(0, 0, 0, 0.85);
   padding: 30px 0;
+
+  &__name, &__block {
+    color: $white;
+  }
 
   &__block, &__social {
     @include flex(flex, center, none);
@@ -170,34 +172,40 @@ $green: #1ED500;
   padding: 5%;
 }
 
-.about{
-&__title, &__subtitle1{
-  color: $gray;
-  padding: 25px 0;
-}
+.about {
+  &__title, &__subtitle1 {
+    color: $gray;
+    padding: 25px 0;
+  }
+
   .start-about {
     @include flex(flex, center, column)
   }
+
   &__subtitle1 {
     width: 61%;
     display: flex;
   }
-  .progress{
+
+  .progress {
     @include flex(flex, center, row);
     justify-content: space-between;
     color: $green;
   }
-  .svg-photo{
+
+  .svg-photo {
     @include flex(flex, center, row);
     justify-content: space-between;
   }
 }
-.stats{
-  ul{
+
+.stats {
+  ul {
     display: flex;
     justify-content: space-around;
   }
-  &__name{
+
+  &__name {
     @include quick();
     font-weight: 400;
     font-size: 40px;
@@ -206,14 +214,17 @@ $green: #1ED500;
     color: $gray;
     width: 148%;
   }
-  &__num{
+
+  &__num {
     color: $green;
   }
-  &__elem{
+
+  &__elem {
     @include flex(flex, center, column);
     width: 20%;
   }
-  &__qwe{
+
+  &__qwe {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,9 +232,6 @@ $green: #1ED500;
     top: -96px;
   }
 }
-
-
-
 
 
 .background3 {
@@ -389,7 +397,32 @@ $green: #1ED500;
 .play {
   @include flex(flex, center, row);
   justify-content: space-around;
-  gap: 200px;
+  gap: 300px;
   position: relative;
   top: 185px;
+}
+
+.background6 {
+  background: no-repeat url("gallery/background6.png");
+  background-size: 100%;
+}
+
+.footers {
+  display: flex;
+  justify-content: space-around;
+  padding: 90px 0;
+
+  &__name, &__block {
+    color: $gray
+  }
+
+  &__block, &__social {
+    @include flex(flex, center, none);
+    gap: 40px;
+
+  }
+
+  &__block-bar {
+    @include flex(flex, center, none);
+  }
 }
