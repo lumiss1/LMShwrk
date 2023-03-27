@@ -399,5 +399,8 @@
   align-items: center;
   flex-direction: none;
 }
+.footers__social-list svg {
+  fill: #333333;
+}
 
 /*# sourceMappingURL=styles.css.map */

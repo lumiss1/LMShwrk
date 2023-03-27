@@ -422,4 +422,9 @@ $green: #1ED500;
   &__block-bar {
     @include flex(flex, center, none);
   }
+  &__social-list{
+    svg{
+    fill: $gray;
+    }
+  }
 }
