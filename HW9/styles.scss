@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+@mixin flex($value1, $value2, $value3) {
+    display: $value1;
+    align-items: $value2;
+    flex-direction: $value3;
+}
+
+$lightgreen: #EAFEEC;
+$healthgreen: #38CEA8;
+$red: #F72A2A;
+$lighttext: #20414D;
+$headtxt: #212D32;
+$black: #000000;
+$txtmain: #376474;
+$white: #FFFFFF;
+
+.subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.section-title {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.infabout {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.header {
+    background-color: $lightgreen;
+    @include flex(flex, center, row);
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.logo {
+    @include flex(flex, center, row);
+
+    &__lead {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: $black;
+    }
+
+    &__inj {
+        font-weight: 400;
+        font-size: 24px;
+        text-align: center;
+        color: $black;
+    }
+}
+
+
+.social {
+    &__items {
+        @include flex(flex, center, row);
+        gap: 20px;
+    }
+}
+
+.headtext {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited,
+a:link {
+    color: $lighttext;
+}
+
+.secondhead {
+    @include flex(flex, center, row);
+    justify-content: space-between;
+    padding: 20px 150px;
+    color: #F1FFF8;
+}
+
+.menu {
+
+    &__list {
+        @include flex(flex, center, row);
+        gap: 25px;
+    }
+}
+
+.contact {
+    display: flex;
+    gap: 25px;
+
+    &__headtext-num {
+        color: $headtxt;
+    }
+
+    &__headtext-mail {
+        color: $headtxt;
+    }
+}
+
+.bg1 {
+    background-color: #F1F3F2;
+    @include flex(flex, center, row);
+    padding: 0 15%;
+}
+
+.startshape {
+    @include flex(flex, center, column);
+
+    &__titlefirst,
+    &__titlesecond,
+    &__subtitle {
+        padding: 10px 0;
+    }
+
+    &__titlefirst {
+        color: #32505B;
+        font-weight: 500;
+    }
+
+    &__titlesecond {
+        color: $txtmain;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        color: $txtmain;
+        width: 94%;
+        display: flex;
+        text-align: center;
+    }
+
+    &__btn-start,
+    &__btn-find {
+        color: $white;
+        border: none;
+        padding: 20px 25px;
+    }
+
+    &__btn-start {
+        background: #F72A2A;
+        border-radius: 32px;
+    }
+
+    &__btn-find {
+        background: #38CEA8;
+        border-radius: 32px;
+    }
+}
+
+.buttonstart {
+    display: flex;
+    gap: 20px;
+}
+
+.howit {
+    @include flex(flex, center, column);
+
+    &__title {
+        color: $headtxt;
+        padding: 50px 0 20px 0;
+    }
+
+    &__subtitle {
+        color: $txtmain
+    }
+}
+
+.stepname {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: $txtmain;
+}
+
+.steps {
+    @include flex(flex, center, row);
+    padding: 30px 80px;
+    gap: 280px;
+}
+
+.allsteps {
+    @include flex(flex, none, row);
+
+    &__num,
+    &__title,
+    &__subtitle {
+        padding: 0px 10px;
+    }
+
+    &__num {
+        color: $healthgreen;
+    }
+
+    &__subtitle {
+        color: $txtmain;
+    }
+
+    &__infabout {
+        color: $txtmain;
+        padding: 20px 10px;
+    }
+}
+
+.pos {
+    @include flex(flex, left, column);
+}
+
+.btn-healthgreen {
+    color: $healthgreen;
+    text-align: center;
+    background: none;
+    border: 2px solid $healthgreen;
+    border-radius: 24px;
+}
+
+.btn-startjorney {
+    padding: 10px 32px;
+}
+
+.btn-pos {
+    @include flex(flex, center, row);
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.bg3 {
+    background: no-repeat url(gallery/background3.png);
+    background-size: 100%;
+
+}
+
+.options {
+    @include flex(flex, center, row);
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.smoothie {
+
+    &__title,
+    &__subtitle,
+    &__infabout {
+        color: $txtmain;
+    }
+
+    &__img {
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    &__infabout {
+        width: 75%;
+        padding: 20px;
+    }
+}
+
+.protein,
+.salad,
+.smoothie {
+    @include flex(flex, center, column);
+    width: 384px;
+    height: 412px;
+    background-color: $white;
+    border-radius: 10px;
+    border-bottom: 10px solid $healthgreen;
+}
+
+.about-story {
+    @include flex(flex, center, row);
+    padding: 30px 10%;
+}
+
+.stories {
+    &__title {
+        color: $healthgreen;
+        font-weight: 400;
+    }
+
+    &__subtitle,
+    &__infabout {
+        color: $headtxt;
+    }
+
+    &__infabout {
+        padding: 20px 0;
+        width: 61%;
+    }
+}
+
+.img-girl {
+    border-radius: 10px;
+    border: 2px solid $healthgreen
+}
+
+.reviews {
+    @include flex(flex, center, row);
+}
+
+.name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+}
+
+.rating {
+    padding: 50px 10%;
+
+    &__upper {
+        @include flex(flex, center, row);
+        border-top: 2px solid $healthgreen;
+
+    }
+
+    &__lower {
+        @include flex(flex, center, row);
+        justify-content: end;
+        border-bottom: 2px solid $healthgreen;
+    
+    }
+}
+
+.result {
+    padding: 0 30px;
+
+    &__text {
+        color: $headtxt;
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    &__text1 {
+        color: $headtxt;
+        padding: 20px 0;
+        width: 105%;
+    }
+
+    &__lost {
+        color: $healthgreen;
+    }
+
+    &__star {
+        padding: 10px 0;
+    }
+}
+
+.reviews1 {
+    padding: 0 10%;
+    @include flex(flex, center, row);
+}
+
+.arrow {
+    @include flex(flex, center, row);
+    justify-content: space-between;
+}
+
+.bg5 {
+    background-color: $healthgreen;
+    opacity: 12%;
+}
+
+.programinclude {
+    @include flex(flex, center, column);
+
+    &__title {
+        color: $headtxt;
+        font-weight: 400;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    &__subtitle {
+        color: $headtxt;
+        text-align: center;
+        width: 40%;
+    }
+}
